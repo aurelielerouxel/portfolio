@@ -1,46 +1,73 @@
 {% extends 'base.html.twig'%}
 
     {% block body %}
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Bootstrap
-            </a>
+    <body class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand text-white" href="#">Accueil</a>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-white" href="#">LinkedIn<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link text-white" href="#">GitHub</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mes réalisations
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Site web</a>
+                            <a class="dropdown-item" href="#">Jeux</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        A propos de moi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">CV</a>
+                            <a class="dropdown-item" href="#">Jeux</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mes compétences
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Langages de programmation</a>
+                            <a class="dropdown-item" href="#">Framework</a>
+                            <a class="dropdown-item" href="#">CMS</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link text-white" href="#">Contactez-moi</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <header class="jumbotron jumbotron-fluid text-white" style="">
-
+        <header class="jumbotron jumbotron-fluid text-white bg-dark text-center">
+            <h1>Portfolio</h1>
         </header>
 
         {% block main %}{% endblock %}
-        
-        <footer class="jumbotron jumbotron-fluid">
 
+        <footer class="jumbotron jumbotron-fluid bg-dark text-white text-center">
+            <div>
+                Réseaux sociaux
+            </div>
+            <p class="text-center text-white">Une application développée par Aurélie Lerouxel, tous droits réservés.</p>
         </footer>
-
-        <p class="text-center text-white">Une application développée par Aurélie Lerouxel, tous droits réservés.</p>
+    </body>
     {% endblock %}
